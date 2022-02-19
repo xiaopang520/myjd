@@ -1,0 +1,863 @@
+/* class="fas" 或者fab */
+.top-bar-wrapper{
+   
+    background-color: #E3E4E5;
+    /*行高 设置高度 使文字垂直居中*/
+    line-height: 30px;
+    height: 30px;
+    border-bottom: 1px solid #ddd;
+                                  
+}
+.top-bar{
+    background-color: #E3E4E5;
+    width:990px;
+    margin: 0 auto;
+    min-width:1000px;
+    position: relative;
+}
+.top-bar a:hover{
+    color: #f21215;
+}
+     /* 左侧菜单 */
+.location{
+    float: left;
+                    
+    
+}
+/* 设置小图标颜色 */
+.location .fas{
+    color: #f21215;
+}
+/* 设置城市列表的效果 */
+.location .city-list{
+    /* 隐藏 */
+    display: none;
+    width: 320px;
+    height: 436px;
+    background-color: white;
+    border: 1px solid rgb(235, 225, 225);
+    /* 设置绝对定位使其不占据页面的位置 */
+    position: absolute;
+    top:31px;
+    box-shadow:rgb(184, 184, 184);
+    z-index: 99;
+                    
+}
+               
+                
+ /* 当鼠标移入到location时，让city-list显示 */
+.location:hover .city-list {
+    /* 显示 */
+    display: block;
+    
+}
+                
+.current-city{
+    padding: 0 10px;          
+    border: 1px solid transparent;
+    border-bottom: none;
+    position: relative;
+    z-index: 9999;
+}
+.location:hover .current-city {
+    background-color:white;
+    border: 1px solid rgb(204, 204, 204);
+    border-bottom: none;
+   
+                  
+                    
+}
+
+/* 右侧菜单 */
+.shortcut{
+    
+    float: right;
+    margin:0 auto;
+    
+}
+.shortcut .highline{
+    color: #f21215;
+}
+/* 设置li */
+.shortcut li{
+    float: left;
+    list-style-type:none;
+    
+}
+/* 分割线 */
+.shortcut .line{
+    width: 1px;
+    height: 10px;
+    background-color: rgb(194, 194, 194);
+    margin: 10px 12px 0 ;
+}
+.shortcut .fas{
+    margin: 0 3px;
+}
+.top-bar a,
+.top-bar span,
+.top-bar i{
+    color: #999;
+    text-decoration: none;
+    
+}
+/* top-header */
+.top-header{
+    width:auto;
+    height: auto;
+    line-height: 1;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid #ddd;
+  
+}
+.header{
+
+    width:990px;
+    margin: 0 auto;
+    min-width:990px;
+    
+    /* position: relative; */
+    
+
+}
+
+.header .logo {
+    margin: 10px 0;
+    width: 180px;
+    height: 120px;
+    overflow: hidden;
+    padding: 0 10px;
+    float: left;
+   
+}
+.header .logo a{
+    display: block;
+    width: 150px;
+    height: 160px;
+    background:  url(../img/logo.png) no-repeat 40% 10% ;
+    
+    
+}
+.header .search{
+    /* padding-top: 30px; */
+    min-width: 990px;
+    height: 60px;
+    margin:0 auto;
+    
+    position: relative;
+    
+}
+.header .search .form{
+    width: 490px;
+    height: 36px;
+    /* position: relative; */
+    border: 3px solid rgb(248, 8, 8);
+    position: absolute;
+    top: 20px;
+    left: 250px;
+    
+    
+    
+}
+.header .search .form .form-input{
+    display: block;
+    width: 380px;
+    margin-left: 10px;
+    height: 32px;
+    line-height: 32px;
+    outline: 0;  
+    float: left;
+    /* position:absolute; */
+    border: 1px solid rgb(255, 255, 255);
+    
+}
+.header .search .form .form-span a{
+
+    display: block;
+    width: 19px;
+    height: 15px;
+    line-height: 1;
+    position: absolute;
+    right: 70px;
+    bottom: 10px;
+    color: #a7a7a7;
+    text-align: center;
+ 
+}
+.header .search .form .search-btn{
+    
+    /* margin: 0;
+    padding: 0; */
+    width: 58px;
+    position: absolute;
+    right: -1px ;
+    height: 37px;
+    bottom: -1px;
+    font-size: 18px;
+    line-height: 1;
+    color: rgb(255, 255, 255);
+    background-color: #c71619;
+    /* 去掉button默认样式 */
+    outline: none;
+    border: none;
+  
+  
+
+}
+.header .search .form .search-btn:hover{
+    background-color: rgb(187, 14, 14);
+    /* 鼠标变 */
+    cursor: pointer;  
+}
+.shop-car{
+    width: 132px;
+    position: absolute;
+    right: 86px;
+    bottom: -1px;
+    border: 1px solid rgb(212, 212, 212);
+}     
+.shop-car:hover{
+    border: 1px solid red;
+} 
+.shop-car i{
+
+    color: rgb(230, 6, 6);
+    float: left;
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 16px;
+
+}
+.shop-car i:hover{
+    cursor: text;
+}
+.shop-car a{
+    color: #000000;
+    float: right;
+    height: 38px;
+    line-height: 38px;
+    /* 更改字间距 */
+    /* letter-spacing:1px; */  
+    margin: 0 16px;
+}
+.shop-car a:hover{
+    color: #f21215;
+}
+.hotwoeds{
+    margin-left: 250px;
+    width: 450px;
+    height: 20px;
+    /* border: 1px solid rgb(230, 75, 75); */
+    background-color: #ffffff;
+    padding-top: 6px;
+    text-align: left;
+    
+}
+.hotwoeds a{
+    color: #bbbbbb;
+    margin-right: 10px;
+}
+.navitems{
+    width: 746px;
+    margin-left: 205px;
+    position: relative;
+
+}
+.navitems ul{
+   margin: 0;
+   padding: 0;
+   position: absolute;
+   top: 22px;
+   left:30px;
+  
+ 
+}
+
+
+.navitems ul li{
+    
+    float: left;
+    margin: 0 8px;
+    font-size: 16px;
+    height: 32px;
+    line-height: 32px;
+    list-style-type: none; 
+}
+.navitems .active a{
+    color: #f12e2e;
+}
+.navitems ul li a{
+    color: #000000;
+}
+
+
+.navitems ul li a:hover{
+    color: #c71619;
+    cursor: pointer;
+}
+/* bar-body */
+.bar-body{
+    min-width: 1262px;
+    background: rgb(247, 247, 247);
+    height: 1200px;
+    
+}
+/* 中间部分 */
+.bar-body-all{
+    width: 990px;
+    margin: 0 auto;
+    /* min-width: 990px; */
+    
+}
+/* 中间的左边部分 */
+.bar-body-all .bar-body-left{
+    float: left;
+    margin-top: 10px;
+    width: 190px;
+    height: 470px;
+    background-color: #ffffff;
+    
+}
+
+.bar-body-all .bar-body-left ul{
+    margin: 0;
+    padding: 10px 0 0 0;
+}
+.bar-body-all .bar-body-left ul li{
+    
+    height: 25px;
+    width: 190px;
+    text-align: left;
+}
+.bar-body-all .bar-body-left ul li a{
+    margin-left: 20px;
+    color: #000000;
+}
+.bar-body-all .bar-body-left ul li a:hover{
+    color: #f21215;
+    
+}
+.bar-body-all .bar-body-left ul li:hover{
+    background-color: #bbbbbb;
+}
+/* 中间的左边列表部分 */
+.bar-body-all .bar-body-list{
+    /* 隐藏 */
+    display: none;
+}
+/* .bar-body-left:hover .bar-body-list{
+
+    display: block;
+} */
+
+
+/* 中间的中间部分 */
+.bar-body .bar-body-all .bar-body-center{
+    display:inline-block;
+    margin-top: 10px;
+
+}
+
+.bar-body .bar-body-all .bar-body-center .bar-body-center-left{
+    width: 590px;
+    height: 470px;
+    position: relative;
+    /* 隐藏溢出 */
+    overflow: hidden;
+    
+}
+
+.bar-body .bar-body-all .bar-body-center .bar-body-center-left .banner-p{
+
+    padding: 0;
+    margin: 0;
+    width: 4720px;  
+    position: relative;
+    /* 轮播图改变left */
+    left: 0;
+    /* transition: 0.2s ease; */
+    
+ 
+    
+}
+/* 开定位设置li照片叠加在一起 显图片 */
+.bar-body .bar-body-all .bar-body-center .bar-body-center-left .banner-p li{
+    float: left;
+    
+    
+}
+/* 修改图片显示层级 */
+/* .bar-body .bar-body-all .bar-body-center .bar-body-center-left .banner-p li:nth-child(3){
+    position: absolute;
+    z-index: 99;
+} */
+
+.bar-body .bar-body-all .bar-body-center .bar-body-center-left .banner-p li a img{
+    max-width: 590px;
+   /* max-height: 470px;    等比例缩小图片*/
+    
+}
+.bar-body .bar-body-all .bar-body-center .bar-body-center-left .btn1{
+    width: 25px;
+    height: 30px;
+    top: 245px;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    outline: none;
+    border: none;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border:1px solid transparent;
+        
+}
+.bar-body .bar-body-all .bar-body-center .bar-body-center-left button i{
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 14px;
+  
+}
+.bar-body .bar-body-all .bar-body-center .bar-body-center-left button:hover{
+    background-color: rgba(126, 126, 126, 0.1);
+    cursor: pointer;
+}
+.bar-body .bar-body-all .bar-body-center .bar-body-center-left .btn2{
+    width: 25px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    right: 0;
+    top: 245px;
+    z-index: 1;
+    outline: none;
+    border: none;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+   
+        
+}
+.bar-body .bar-body-all .bar-body-center .bar-body-center-left .pointer{
+    position: absolute;
+    z-index: 9999;
+    left: 40px;
+    bottom: 10px;
+}
+.bar-body .bar-body-all .bar-body-center .bar-body-center-left .pointer a{
+    /* display: block; */
+    float: left;
+    width: 10px;
+    height: 10px;
+    margin: 0 2px;
+    /* 变成圆形 */
+   border-radius: 50%; 
+   /* 设置透明度 */
+    background-color: rgba(255, 255, 255, 0.3);
+    /* 将背景颜色值设置到内容区，边框和内边距不再有背景颜色 */
+    background-clip: content-box;
+    /* transparent 边框变透明 */
+    border: 3px solid transparent;
+}
+
+.bar-body .bar-body-all .bar-body-center .bar-body-center-left .pointer .active{
+    background-color: #ffffff;
+    border: 3px solid rgba(206, 205, 205, 0.6);
+
+}
+/* 中间右边部分 */
+.bar-body .bar-body-all .bar-body-right{
+    float: right;
+    width: 190px;
+    height: 470px;
+    margin-top: 10px;
+    /* margin-bottom: 10px; */
+    background-color: #ffffff;
+}
+.bar-body .bar-body-all .bar-body-right .bar-body-right-top{
+    width: 190px;
+    height: 100px;
+   
+}
+.bar-body .bar-body-all .bar-body-right .bar-body-right-top .title{
+    width: 100%;
+    height:50%;
+    position: relative;
+    
+}
+.bar-body .bar-body-all .bar-body-right .bar-body-right-top .title .photo{
+    float: left;
+    margin: 10px;
+    width: 30px;
+    color: #8a8a8a;
+
+}
+
+.bar-body .bar-body-all .bar-body-right .bar-body-right-top .title .welcome{
+    position: absolute;
+    top: 10px;
+    left: 60px;
+    display: inline-block;
+    color: #1d1d1d;
+    
+}
+.bar-body .bar-body-all .bar-body-right .bar-body-right-top .title p{
+
+    margin: 0 auto ;
+    left: 60px;
+    position: absolute;
+    top: 30px;
+    
+
+}
+.bar-body .bar-body-all .bar-body-right .bar-body-right-top .title p a,span{
+    color: #1d1d1d;
+}
+.bar-body .bar-body-all .bar-body-right .bar-body-right-top .title .welcome:hover,p a:hover{
+    color: #ff0004;
+}
+.bar-body .bar-body-all .bar-body-right .bar-body-right-top .title-btn{
+    width: 190px;
+    height: 25px;
+    position: relative;
+    top: 8px;
+    overflow: hidden;
+}
+.bar-body .bar-body-all .bar-body-right .bar-body-right-top .title-btn .btn1{
+    width: 70px;
+    height: 40px;
+    left: 20px;
+    top: -8px;
+    position: absolute;
+    font-size: 12px;
+    outline: none;
+    border: none;
+    background-color: rgb(228, 20, 65);
+    border-radius: 50%;
+    color: white; 
+}
+.bar-body .bar-body-all .bar-body-right .bar-body-right-top .title-btn .btn1:hover{
+    background-color: rgb(192, 41, 74);
+    cursor: pointer;
+}
+.bar-body .bar-body-all .bar-body-right .bar-body-right-top .title-btn .btn2:hover{
+    background-color: rgb(192, 41, 74);
+    cursor: pointer;
+    color: #ffffff;
+}
+.bar-body .bar-body-all .bar-body-right .bar-body-right-top .title-btn .btn2{
+   
+    width: 70px;
+    height: 40px;
+    right: 20px;
+    top: -8px;
+    position: absolute;
+    font-size: 12px;
+    outline: none;
+    border: none;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    color: #ffda08;
+    
+}
+/* 灰色线 */
+.bar-body .bar-body-all .bar-body-right .bar-body-right-center .line1{
+    position: absolute; 
+    height: 1px;
+    left: 15px;
+    right: 15px;
+    background: linear-gradient(270deg,white,#eeeeee,#eeeeee,white);
+}
+.bar-body .bar-body-all .bar-body-right .bar-body-right-center .bar-body-right-center-title{
+    height: 20px;
+    padding: 10px 0;
+    
+}
+.bar-body .bar-body-all .bar-body-right .bar-body-right-center h5{
+    float: left;
+    margin: 0 0 0 10px;
+    font-size: 14px;
+}
+.bar-body .bar-body-all .bar-body-right .bar-body-right-center .bar-body-right-center-title a{
+    float: right;
+    margin: 0 10px 0 0 ;
+    color: #bbbbbb;
+}
+.bar-body .bar-body-all .bar-body-right .bar-body-right-center .list {
+    margin: 0 ;
+    padding: 0;
+    
+}
+.bar-body .bar-body-all .bar-body-right .bar-body-right-center .list li{
+    /* display: inline; */
+    
+    margin: 0 15px;
+    height: 30px;
+    /* line-height: 30px; */
+   
+
+}
+.bar-body .bar-body-all .bar-body-right .bar-body-right-center .list li a{
+  
+    /* 块元素 */
+    display: block;
+    /* 取消换行 */
+    white-space: nowrap;
+    /* 隐藏溢出部分 */
+    overflow: hidden;
+    /* 超出用...表示 */
+    text-overflow: ellipsis;
+    color: #a1a1a1;
+}
+.bar-body .bar-body-all .bar-body-right .bar-body-right-center .list li a:hover{
+    color: #c71619;
+}
+.bar-body .bar-body-all .bar-body-right .bar-body-right-center .list li a span{
+    display: inline-block;
+    /* position: relative; */
+    font-size: 12px;
+    width: 35px;
+    line-height: 16px;
+    text-align: center; 
+    color: #e1251b;
+    background-color: rgba(221, 49, 40, 0.08);
+    margin-right: 6px;
+}
+
+
+.bar-body .bar-body-all .bar-body-right .bar-body-right-center{
+    position: relative;
+}
+/* 灰色线 */
+.bar-body .bar-body-all .bar-body-right .bar-body-right-center .line2{
+    position: absolute; 
+    height: 1px;
+    left: 15px;
+    right: 15px;
+    background: linear-gradient(270deg,white,#eeeeee,#eeeeee,white);
+    bottom: 2px;
+}
+.bar-body .bar-body-all .bar-body-right .bar-body-right-bottom{
+    
+    border: 1px solid rgb(49, 45, 45);
+    height: 200px;
+    margin: 0 15px;
+}
+.bar-body .bar-body-all .bar-body-right .bar-body-right-bottom .list ul{
+    display: flex;
+    justify-content: space-around;
+    font-size: 13px;
+    color: #555555;
+    line-height: 50px;
+    height: 50px;
+}
+.bar-body .bar-body-all .bar-body-right .bar-body-right-bottom .list li:hover{
+color: red;
+cursor: pointer;
+border-bottom: 3px solid red;
+}
+
+
+
+
+.bar-body .bar-body-banner-center{
+    width: 990px;
+    position: relative;
+    margin: 30px auto;
+}
+.bar-body .bar-body-banner-center .bar-body-left{
+    float: left;
+    width: 190px;
+    height: 220px;
+    background-color: rgb(255, 0, 0);
+    padding-top: 40px;
+}
+.bar-body .bar-body-banner-center .bar-body-left span{
+    display: block;
+    color: rgb(255, 255, 255);
+    
+}
+.bar-body .bar-body-banner-center .bar-body-left span:nth-child(2){
+    margin-bottom: 9px;
+}
+.bar-body .bar-body-banner-center .bar-body-left span:nth-child(3) p{
+    background-color: #000000;
+    margin: 5px;
+    font-size: 16px;
+    padding: 7px;
+    font-weight: bold;
+}
+.bar-body .bar-body-banner-center .bar-body-left span p{
+   display: inline;
+    height: 30px;
+    line-height: 30px;
+}
+.bar-body .bar-body-banner-center .bar-body-left span:nth-child(1){
+    font-size: 28px;
+    padding-bottom: 80px;
+    display: block;
+    
+}
+
+/* 轮播 */
+.bar-body .bar-body-banner-center .bar-body-center{
+    position:absolute;
+    height: 260px;
+    left: 190px;
+    right: 190px;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    
+}
+
+.bar-body .bar-body-banner-center .bar-body-center .imglist{
+    position: absolute;
+    left: 0;
+    transition:0.6s ease;
+    width: 2304px;
+}
+
+.bar-body .bar-body-banner-center .bar-body-center .imglist a{
+    float: left; 
+    color: #7a7a7a;
+}
+.bar-body .bar-body-banner-center .bar-body-center .imglist a:hover{
+    color: #c71619;
+}
+.bar-body .bar-body-banner-center .bar-body-center .imglist a img{
+    max-width: 140px;
+    margin: 25px 25px auto 27px;
+}
+.bar-body .bar-body-banner-center .bar-body-center .imglist h6{
+    margin: 6px auto ; 
+}
+/* 右边按钮 */
+.bar-body .bar-body-banner-center .bar-body-center button{
+    
+    position: absolute;
+    bottom: 100px;
+    width: 25px;
+    height: 30px;
+    outline: none;
+    border: none;
+    right: 0;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.bar-body .bar-body-banner-center .bar-body-center button i{
+    color: #ffffff;
+}
+.bar-body .bar-body-banner-center .bar-body-center button:hover{
+    background-color: rgba(126, 126, 126, 0.1);
+    cursor: pointer;
+}
+.bar-body .bar-body-banner-center .btn1{
+    position: absolute;
+    left: 0;
+    color: red;
+    z-index: 1;
+    transform:rotate(180deg);
+}
+.bar-body .bar-body-banner-center .btn1 i{
+    transform:rotate(180deg);
+}
+
+.bar-body .bar-body-banner-center .bar-body-right{
+    float: right;
+    width: 190px;
+    height: 260px;
+    background-color: white;
+}
+.bar-body .bar-body-banner-center .bar-body-right .bar-body-right-img{
+    display: flex;
+    overflow: hidden;
+    
+}
+.bar-body .bar-body-banner-center .bar-body-right .bar-body-right-img a{
+    color: #999;
+}
+.bar-body .bar-body-banner-center .bar-body-right .bar-body-right-img img{
+    max-width: 140px;
+    margin: 25px 25px auto 27px;
+    /* position: absolute;
+    left: 0;
+    transition:0.6s ease;
+    width: 2304px; */
+}
+/* 最右侧滚动导航条 */
+.bar-body .left-list1{
+  width: 58px;
+  height: 348px;
+  position:fixed;
+  margin-left: 1012px;
+  top: 0;
+}
+.bar-body .left-list{
+    position: absolute;
+    right: -80px;
+    width: 58px;
+    height: 348px;
+  }
+.bar-body ul{
+    margin: 0;
+    padding: 0;
+}
+.bar-body .listdaohan li{
+      background-color: white;
+      width: 58px;
+      height: 60px;
+      border-top: 1px solid rgb(236, 236, 236);
+      
+      
+  }
+.bar-body .listdaohan li a{
+    display: block;
+    font-size: 15px;
+    padding: 6px 10px 6px 10px;
+    color: #000000;
+}
+.bar-body .listdaohan li:hover{
+    background-color: rgb(204, 26, 26); 
+}
+.bar-body .listdaohan li a:hover{
+    color: white;
+}
+.bar-body .listdaohan li i{
+    display: block;
+    font-size: 15px;
+    margin-top: 5px;
+}
+.bar-body .bar-bottom{
+    padding-bottom: 50px;
+    border-bottom:1px solid #c9c9c9;
+    
+}
+.bar-body .bar-bottom .bar-bottom-title ul{
+    width: 990px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 40px auto;
+    padding-bottom: 40px;
+    border-bottom:1px solid #c9c9c9;
+}
+.bar-body .bar-bottom .bar-bottom-title li{
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: 18px;
+    color: #535353;
+}
+.bar-body .bar-bottom .list1{
+    display: flex;
+    justify-content: space-between;
+    width: 990px;
+    margin: 5px auto;
+}
+.bar-body .bar-bottom .list1 ul li{
+   color: rgb(119, 119, 119);
+   font-size: 15px; 
+   font-weight: bold;
+}
+.bar-body .bar-bottom .list1 ul li a{
+    color: rgb(189, 189, 189);
+    font-size: 12px; 
+    
+}

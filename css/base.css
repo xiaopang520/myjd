@@ -1,0 +1,26 @@
+/* 公共 */
+.clearfix::before,
+.clearfix::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 1400px;
+    min-width: 1262px;
+    font: 12px/1.5 Microsoft YaHei,Heiti SC,tahoma,arial,Hiragino Sans GB,"\5B8B\4F53",sans-serif;
+    margin: 0;
+    border: 0;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    
+}
+li{
+    list-style-type: none;
+}
